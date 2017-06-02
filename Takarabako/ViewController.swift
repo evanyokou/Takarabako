@@ -86,5 +86,11 @@ class ViewController: UIViewController {
             self.flag += 1
         })
     }
+    
+    @IBAction func forwardChatView(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let chatController = storyboard.instantiateViewController(withIdentifier: "ChatControllerSBID")
+        self.present(chatController, animated: true, completion: nil)
+    }
 }
 

@@ -14,6 +14,9 @@
 		86273BF01EE058E700F4796B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86273BEF1EE058E700F4796B /* Assets.xcassets */; };
 		86273BF31EE058E700F4796B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86273BF11EE058E700F4796B /* LaunchScreen.storyboard */; };
 		86273BFE1EE058E700F4796B /* TakarabakoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86273BFD1EE058E700F4796B /* TakarabakoTests.swift */; };
+		864658841EE168AC0046BAFB /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864658831EE168AC0046BAFB /* ChatController.swift */; };
+		864658871EE168D40046BAFB /* MsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864658861EE168D40046BAFB /* MsgCell.swift */; };
+		8646588A1EE16F9D0046BAFB /* Msg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864658891EE16F9D0046BAFB /* Msg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		86273BF91EE058E700F4796B /* TakarabakoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakarabakoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86273BFD1EE058E700F4796B /* TakarabakoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakarabakoTests.swift; sourceTree = "<group>"; };
 		86273BFF1EE058E700F4796B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		864658831EE168AC0046BAFB /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		864658861EE168D40046BAFB /* MsgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgCell.swift; sourceTree = "<group>"; };
+		864658891EE16F9D0046BAFB /* Msg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Msg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		86273BE41EE058E700F4796B /* Takarabako */ = {
 			isa = PBXGroup;
 			children = (
+				864658881EE16F8F0046BAFB /* utils */,
+				864658851EE168B70046BAFB /* table */,
 				86273C0A1EE0590F00F4796B /* storyboard */,
 				86273C091EE0590700F4796B /* controller */,
 				86273C081EE058FC00F4796B /* delegate */,
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				86273BE71EE058E700F4796B /* ViewController.swift */,
+				864658831EE168AC0046BAFB /* ChatController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -121,6 +130,22 @@
 				86273BF11EE058E700F4796B /* LaunchScreen.storyboard */,
 			);
 			name = storyboard;
+			sourceTree = "<group>";
+		};
+		864658851EE168B70046BAFB /* table */ = {
+			isa = PBXGroup;
+			children = (
+				864658861EE168D40046BAFB /* MsgCell.swift */,
+			);
+			name = table;
+			sourceTree = "<group>";
+		};
+		864658881EE16F8F0046BAFB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				864658891EE16F9D0046BAFB /* Msg.swift */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +255,10 @@
 			files = (
 				86273BE81EE058E700F4796B /* ViewController.swift in Sources */,
 				86273BEE1EE058E700F4796B /* Takarabako.xcdatamodeld in Sources */,
+				864658871EE168D40046BAFB /* MsgCell.swift in Sources */,
+				8646588A1EE16F9D0046BAFB /* Msg.swift in Sources */,
 				86273BE61EE058E700F4796B /* AppDelegate.swift in Sources */,
+				864658841EE168AC0046BAFB /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +468,7 @@
 				86273C041EE058E700F4796B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86273C051EE058E700F4796B /* Build configuration list for PBXNativeTarget "TakarabakoTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +477,7 @@
 				86273C071EE058E700F4796B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
